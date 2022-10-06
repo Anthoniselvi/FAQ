@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+/* font-family: 'Kumbh Sans', sans-serif;  */
+
+:root{
+    --softRed: hsl(14, 88%, 65%); 
+    --veryDarkGrayBlue: hsl(237, 12%, 33%);
+    --darkGrayBlue: hsl(240, 6%, 50%);
+    --lightGrayBlue: hsl(240, 5%, 91%);
+}
+/*
+#### Text
+
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+#### Gradient
+
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+### Neutral
+
+#### Text
+
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 12px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background: #ffffff;
+    border-radius: 30px;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position-y: -22rem;
+    background-position-x: -50rem;
+    height:70vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:5rem;
+}
+.left{
+    position: relative;
+}
+.image{
+    background: url(images/illustration-woman-online-desktop.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x: -7.5rem;
+    background-position-y: center;
+    /* background-position: 120% center; */
+}
+.box{
+    position: absolute;
+    top: 19rem;
+    left: -9rem;
+}
+.question-list > .answer{
+    display: none;
+}
+
+.active > .answer{
+    display: block;
+    color: var(--darkGrayBlue);
+    padding-bottom: 1rem;
+}
+.active img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+  }
+  .right{
+    
+    padding-top: 6rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  h1{
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--veryDarkGrayBlue);    
+  }
+  .question-list{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e8e8ea;
+    margin-right: 6rem;
+  }
+  .question{
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    cursor: pointer;
+    padding: 2rem 0;
+    
+
+  }
+  h2{
+    font-weight: 900;
+    
+  }
+  .question img{
+    
+    align-self: center;
+  }
+  .answer{
+    font-weight: 700;
+    
+  }
+
+  
