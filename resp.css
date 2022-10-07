@@ -1,35 +1,49 @@
-@media (max-width: 600px) {
-    main {
-      display: flex;
-      flex-direction: column;
-     padding: 3rem;
-      gap: 1rem;
-      position: relative;
-      padding: 1rem;
+@media (max-width: 800px) {
+ body{
+  height: 800px;
+ 
+ }
+  main {
+      width: 350px;
+      height: 580px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 1rem;
+   background-image: none;
+   margin-top: 25%;  
+            
   }
     .left {
       background: url("images/bg-pattern-mobile.svg");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center;  
+      background-position-y: -2%; 
+     
     }
   
+  h1{
+    text-align: center;
+  }
     .image {
       position: absolute;
       width: 100%;
       height: 200px;
-      /* background-size: 72%; */
+      background-size: 70%;
       background-position: center;
-      /* top: -129%; */
+      top: -120%;
     }
-    
+    .box {
+      width: 95px;
+      left:13%;
+      top: -40%;
+    }
     .right {
-      margin-top: 0px;
+      padding: 1.5rem;
+     
     }
     .question-list {
       width: 100%;
     }
-    h1 {
-      text-align: center;
-    }
+   
   }
   
