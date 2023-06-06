@@ -87,6 +87,9 @@ main{
     top: 19rem;
     left: -9rem;
 }
+.content{
+  /* overflow: auto; */
+}
 .question-list > .answer{
     display: none;
 }
@@ -101,8 +104,8 @@ main{
     transition: all 0.3s ease-in;
   }
   .right{
-    
-    padding-top: 6rem;
+    overflow: auto;
+    padding-top: 1rem;
     padding-left: 5rem;
     display: flex;
     flex-direction: column;
